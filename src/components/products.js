@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Products = ({ products, addToCart }) => {
   const allProducts = products.map((item, index) => {
     return (
@@ -20,17 +22,12 @@ const Products = ({ products, addToCart }) => {
 
   return (
     <div
-      style={{
-        margin: "10px",
-        display: "flex",
-        flexDirection: "row",
-        flexWrap: "wrap",
-        justifyContent: "center",
-      }}
-    >
+      style={{ margin: "2em", display: "flex", flexWrap: "wrap",justifyContent: "center" }} >
       {allProducts}
     </div>
   )
-}
+};
 
-export default Products
+
+
+export default Products;
