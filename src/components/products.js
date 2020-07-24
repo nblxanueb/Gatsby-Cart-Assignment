@@ -6,8 +6,8 @@ const Products = ({ products, addToCart }) => {
   const allProducts = products.map((item, index) => {
     return (
       <div style={{ padding: "1em", margin: "1em", border: "2px solid lightgrey", borderRadius: '1em', maxWidth: "20em" }} key={index} >
-        <form onSubmit={addToCart}>
-          <img style={{ maxWidth: "300px" }} src={item.img} alt={item.name} />
+        <div onSubmit={addToCart}>
+          <img src={item.img} />
           <div style= {{ fontWeight: "bold"}}>{item.name}</div>
           <div>By {item.author}</div>
           <br/>
@@ -15,7 +15,7 @@ const Products = ({ products, addToCart }) => {
             <div>${item.price}</div>
             <button style={{ border: "none", background: "none"}}>🛒 Add</button>
           </div>
-        </form>
+        </div>
       </div>
     )
   })

@@ -5,13 +5,13 @@ import { Link } from "gatsby";
 
 const Navbar = ({ cartItems }) => {
   return (
-    <div style={{ background: `black`, marginBottom: `1.45rem` }} >
-      <div style={{ display: "flex", justifyContent: "space-between" }} >
+    <div style={{ background: "darkblue" }} >
+      <div style={{ display: "flex", justifyContent: "space-between", padding: "1.5em 3em 1.5em 3em" }} >
         <Link to="/">
-            <h1 style={{ margin: 0, color: "white",padding: "20px",}} >Sticker Store</h1>
+            <h1 style={{ color: "white" }} >Sticker Store</h1>
         </Link>
         <Link to="/cart/" state={{ cartItems }}>
-            <h1 style={{ margin: 0, color: "white",padding: "20px" }} > My Cart </h1>
+            <h1 style={{ color: "white" }} > My Cart </h1>
         </Link>
       </div>
     </div>

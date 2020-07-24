@@ -5,8 +5,8 @@ import React from "react";
 const Checkout = () => {
   return (
     <>
-      <h3>Shipping Information:</h3>
-      <div style= {{ border: "1px solid grey", padding: "1em", fontWeight: "bold", margin: "2em"}}>
+      <h3 style={{display: "flex", justifyContent: "center", fontSize: "2em", margin: "1em"}}>Shipping Information:</h3>
+      <div style= {{ border: "2px solid lightgrey", borderRadius: '1em', padding: "1em", fontWeight: "bold", margin: "2em"}}>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "center",}}>
           <label >Name:  </label><input type="text" placeholder="First name"/>  <input type="text" placeholder="Last name"/><br/><br/>
           <label>Address:  </label><input type="text" placeholder="Line 1"/>  <input type="text" placeholder="Line 2"/><br/><br/>
